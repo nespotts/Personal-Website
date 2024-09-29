@@ -292,6 +292,7 @@ iframe {
     border-style: solid;
     padding: 5px;
     z-index: 21;
+    display: none;
 }
 .menu_item {
     position: relative;
@@ -303,6 +304,21 @@ iframe {
 }
 .menu_link{
     text-decoration: none;
+}
+.mobile-menu {
+    position: fixed;
+    color: #66BFBF;
+    left: 5px;
+    top: 5px;
+    text-align: center;
+    width: 50px;
+    border-radius: 15px;
+    border-color: #66BFBF;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    z-index: 20;
+    display: none;
 }
 .project_link {
     cursor: pointer;

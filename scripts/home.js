@@ -1,8 +1,8 @@
 /// <reference path="../"
-$(document).ready( function() {
+$(document).ready(function () {
 
   // $('.pop-img').on("mouseenter", {pop: true, amt: 1.05}, popImg).on("mouseleave", {pop: false, amt: 1.05}, popImg);
-  $('#js_skill').on('dblclick', function() {
+  $('#js_skill').on('dblclick', function () {
     $('#js_hints').toggle();
   });
 
@@ -20,6 +20,12 @@ function setSkillRowWidth() {
   let width = window_width > default_width * 0.9 ? default_width : window_width * 0.9;
   width = `${width}px`;
   $('.skill-row').css('width', width);
+
+  if (window_width < default_width * 0.8) {
+    $('.skill-img').parent().hide();
+  } else {
+    $('.skill-img').parent().show();
+  }
 }
 
 
