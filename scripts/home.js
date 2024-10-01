@@ -29,6 +29,8 @@ function setTitleSectionWidth() {
     });
 
     $('.profile').css('width', `${width}%`);
+
+    $('.get-in-touch').css('width', `${width}%`);
 }
 
 
