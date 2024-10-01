@@ -5,11 +5,13 @@ body {
     font-family: 'Merriweather', serif;
     color: #40514E;
 }
+
 h1 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-family: 'Sacramento', cursive;
 }
+
 h2 {
     font-size: 2.8rem;
     font-family: 'Montserrat', sans-serif;
@@ -18,26 +20,31 @@ h2 {
     line-height: 1.5;
     color: #66BFBF;
 }
+
 h3 {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
 }
+
 h4 {
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
 }
+
 p {
     font-size: .8rem;
     padding-top: 0px;
     margin-top: 0px;
 }
+
 ul {
     font-size: .8rem;
     padding-top: 0px;
     margin-top: 0px;
 }
+
 hr {
     border-style: dotted none none none;
     border-color: gray;
@@ -46,23 +53,29 @@ hr {
     width: 10%;
     margin: 100px auto;
 }
+
 iframe {
     margin: 0px;
 }
+
 .top_container {
+    width: 50%;
+    margin: 0px auto;
     position: relative;
     border: none;
     border-width: 0px;
-    height: 550px;
+    height: 500px;
 }
-.title-block  {
+
+.title-block {
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: 40%;
     margin: 0px auto;
     top: 0px;
-    left: 15%;
+    left: 0%;
 }
+
 .title1 {
     position: relative;
     font-weight: 800;
@@ -70,57 +83,56 @@ iframe {
     top: 0%;
     color: #66BFBF;
 }
+
 .title2 {
     position: relative;
     margin: 1px;
     font-size: 1.3rem;
     color: #66BFBF;
 }
-.left-cloud {
-    position: absolute;
-    left: 5%;
-    bottom: 25%;
-    width: 25%;
-}
-.right-cloud {
-    position: absolute;
-    top: 2%;
-    right: 0%;
-    width: 25%;
-}
+
 .mountain {
     position: absolute;
-    width: 50%;
-    left: 25%;
+    width: 100%;
+    left: 0%;
     bottom: 0px;
 }
+
 .camper {
     position: absolute;
-    width: 10%;
-    left: 33%;
+    width: 20%;
+    left: 5%;
     bottom: -4%;
 }
+
 .middle-container {
     background-color: white;
     padding-bottom: 1px;
 }
+
 .intro {
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    margin: 0px auto;
     line-height: 1.75rem;
 }
+
 .profile {
-    padding: 40px 40px 0px;
+    position: relative;
+    width: 50%;
+    margin: 0px auto;
 }
+
 .profile-img {
-    margin: 20px;
-    width: 30%;
-    border-radius: 50px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    margin: 40px auto 20px;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
+
 .programming_skills {
     padding: 0px;
 }
+
 .skill-row {
     display: block;
     position: relative;
@@ -130,26 +142,31 @@ iframe {
     font-size: 1.0rem;
     line-height: 1.75;
 }
+
 .skill_header {
     width: 30%;
     display: inline-block;
     position: relative;
     margin: 10px auto;
 }
+
 .pop-img:hover {
     /* pop img */
     transform: scale(1.05);
     transition: 0.35s;
 }
+
 .skill-img {
     width: 100%;
 }
+
 .certificate_left {
     display: inline-block;
     position: absolute;
     margin: 15px auto;
     right: 10%;
 }
+
 .certificate_right {
     display: inline-block;
     position: relative;
@@ -157,18 +174,22 @@ iframe {
     /* right: 5%; */
     left: 15%;
 }
+
 .engineering_skills {
     padding: 0px;
 }
+
 .eng-img1 {
     width: 140px;
     float: left;
     margin-right: 3%;
     background-color: black;
 }
+
 .experience {
     padding: 0px;
 }
+
 .experience-hr {
     border-style: none;
     border-top-style: dotted;
@@ -177,6 +198,7 @@ iframe {
     width: 10%;
     margin: 0px auto;
 }
+
 .exp-img1 {
     width: 250px;
     float: left;
@@ -190,6 +212,7 @@ iframe {
     margin: 0px;
 
 }
+
 .job_title {
     position: absolute;
     right: 0%;
@@ -199,10 +222,11 @@ iframe {
     font-weight: 200;
     font-size: 1.2rem;
 }
+
 .job_title2 {
-    position: absolute;
-    display: inline-block;
-    right: 0%;
+    /* position: absolute; */
+    /* display: block; */
+    /* right: 0%; */
     /* top: 0px; */
     /* margin: 0px; */
     font-style: italic;
@@ -210,6 +234,7 @@ iframe {
     font-size: 1.2rem;
     margin: 0px;
 }
+
 .get-in-touch {
     position: relative;
     margin: 20px;
@@ -219,43 +244,49 @@ iframe {
     margin: 0 auto;
     padding-bottom: 40px;
 }
+
 .contact-msg {
     width: 75%;
     margin: 20 auto 20;
 }
+
 .hyperlink {
     color: #11999E;
     text-decoration: none;
 }
+
 .hyperlink:hover {
     font-weight: 900;
 }
+
 .email_btn {
-  position: relative;
-  top: 20px;
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+    position: relative;
+    top: 20px;
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
+
 .email_btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
 }
+
 .bottom-container {
     position: relative;
     height: 120px;
@@ -264,6 +295,7 @@ iframe {
     background: #66BFBF;
     text-align: center;
 }
+
 .footer-link {
     position: relative;
     top: 25px;
@@ -271,15 +303,18 @@ iframe {
     color: #11999E;
     text-decoration: none;
 }
+
 .footer-link:hover {
     color: #EAF6F6;
 }
+
 .copyright {
     position: relative;
     color: #EAF6F6;
     top: 65px;
     font-size: 0.85rem;
 }
+
 .mouse:hover {
     background-color: #395B64;
 }
@@ -299,6 +334,7 @@ iframe {
     z-index: 21;
     display: none;
 }
+
 .menu_item {
     position: relative;
     top: 5%;
@@ -307,9 +343,11 @@ iframe {
     text-decoration: none;
     font-size: 1.1rem;
 }
-.menu_link{
+
+.menu_link {
     text-decoration: none;
 }
+
 .mobile-menu {
     position: fixed;
     color: #66BFBF;
@@ -325,9 +363,11 @@ iframe {
     z-index: 20;
     display: none;
 }
+
 .project_link {
     cursor: pointer;
 }
+
 .project_link:hover {
     font-weight: 800;
 }
@@ -346,12 +386,14 @@ iframe {
     margin: 0%;
     z-index: 20;
 }
+
 .project_title {
     position: relative;
     margin-top: 12px;
     font-weight: 800;
     color: #66BFBF;
 }
+
 .top_space {
     height: 100px;
 }
@@ -362,31 +404,37 @@ iframe {
     bottom: 10px;
     width: 5=10%;
 }
+
 .right-cloud1 {
     position: absolute;
     top: 10px;
     right: 25%;
     width: 10%;
 }
-.project1 {
+
+.project_container {
     position: relative;
     width: 50%;
     margin: 0% auto;
     top: 10px;
 }
+
 .project_text {
     line-height: 1.5rem;
 }
+
 .fusion360 {
     position: relative;
     margin: 20px auto 20px;
     width: 100%;
     height: 500px;
 }
+
 .iframe_container {
     width: 100%;
     margin: 20px 0px 40px 0px;
 }
+
 .video_container {
     width: 100%;
     margin: 20px 0px 40px 0px;
@@ -398,25 +446,29 @@ iframe {
     width: 100%;
     height: 100%;
 }
-.italics {
 
-}
+.italics {}
+
 .pcb {
     width: 250px;
     padding: 10px;
 }
+
 .pcb:hover {
     transform: scale(2);
     transition: 0.35s ease;
 }
+
 .pcb1 {
     width: 200px;
     padding: 10px;
 }
+
 .pcb1:hover {
     transform: scale(1.75);
     transition: 0.35s ease;
 }
+
 .schematic {
     display: inline;
     padding: 0px;
@@ -426,22 +478,26 @@ iframe {
 #woodstove_thermostat {
     /* position: relative; */
 }
+
 #onewheel {
     /* position: relative; */
 }
+
 #robot {
     /* position: relative; */
 }
+
 #solar {
     /* position: relative; */
 }
+
 code {
     padding: 0px 5px;
-    color: blue;    
+    color: blue;
 }
+
 .hints {
     display: inline-block;
     position: relative;
     /* text-align: left; */
 }
-

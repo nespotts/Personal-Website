@@ -1,41 +1,47 @@
 /// <reference path="../"
 $(document).ready(function () {
 
-  // $('.pop-img').on("mouseenter", {pop: true, amt: 1.05}, popImg).on("mouseleave", {pop: false, amt: 1.05}, popImg);
-  $('#js_skill').on('dblclick', function () {
-    $('#js_hints').toggle();
-  });
+    // $('.pop-img').on("mouseenter", {pop: true, amt: 1.05}, popImg).on("mouseleave", {pop: false, amt: 1.05}, popImg);
+    $('#js_skill').on('dblclick', function () {
+        $('#js_hints').toggle();
+    });
 
-  setSkillRowWidth();
-  $(window).on('resize', (event) => {
     setSkillRowWidth();
-  });
+    setTitleSectionWidth();
+    $(window).on('resize', (event) => {
+        setSkillRowWidth();
+        setTitleSectionWidth();
+    });
 
 });
 
 
-function setSkillRowWidth() {
-  let default_width = 700;
-  let window_width = $(window).width();
-  let width = window_width > default_width * 0.9 ? default_width : window_width * 0.9;
-  width = `${width}px`;
-  $('.skill-row').css('width', width);
+function setTitleSectionWidth() {
+    let width = 50;
+    let height = 550;
+    if (is_mobile) {
+        width = 90;
+        height = 400;
+    }
+    $('.top_container').css({
+        'width': `${width}%`, 
+        'height': `${height}px`
+    });
 
-  if (window_width < default_width * 0.8) {
-    $('.skill-img').parent().hide();
-  } else {
-    $('.skill-img').parent().show();
-  }
+    $('.profile').css('width', `${width}%`);
 }
 
 
+function setSkillRowWidth() {
+    let default_width = 700;
+    let window_width = $(window).width();
+    let width = window_width > default_width * 0.9 ? default_width : window_width * 0.9;
+    width = `${width}px`;
+    $('.skill-row').css('width', width);
 
-
-// function popImg(event) {
-//   let width = parseInt($(this).css("width"));
-//   let ms = 100;
-//   if(event.data.pop)
-//     $(this).animate({'width': width*event.data.amt + 'px'}, ms);
-//   else
-//     $(this).animate({'width': width/event.data.amt + 'px'}, ms);
-// }
+    if (window_width < default_width * 0.8) {
+        $('.skill-img').parent().hide();
+    } else {
+        $('.skill-img').parent().show();
+    }
+}

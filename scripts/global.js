@@ -17,7 +17,11 @@ function updateCopyright() {
 
 function isMobile() {
     let platform = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    console.log(platform);
+    if (!platform) {
+        if ($(window).width() < 500) {
+            platform = true;
+        }
+    }
     
     if (platform != is_mobile) {
         platform_change = true;
@@ -56,7 +60,7 @@ function isMobile() {
         $('.mobile-menu').hide();
 
         $('.mobile-menu').off('mouseover');
-        $('.menu').off('mouseleave');
+        $('body').off('click');
     }
 }
 
