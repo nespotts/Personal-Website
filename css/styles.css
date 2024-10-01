@@ -33,6 +33,11 @@ p {
     padding-top: 0px;
     margin-top: 0px;
 }
+ul {
+    font-size: .8rem;
+    padding-top: 0px;
+    margin-top: 0px;
+}
 hr {
     border-style: dotted none none none;
     border-color: gray;
@@ -120,7 +125,7 @@ iframe {
     display: block;
     position: relative;
     width: 700px;
-    margin: 70px auto;
+    margin: 50px auto;
     text-align: left;
     font-size: 1.0rem;
     line-height: 1.75;
