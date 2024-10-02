@@ -20,13 +20,17 @@
 
 <body>
 	<div class="project_header">
-		<!--    <img class="right-cloud1" src="./images/cloud.png" alt=cloud-img">-->
-		<h1 class="project_title">Professional Projects</h1>
-		<!--    <img class="left-cloud1" src="./images/cloud.png" alt=cloud-img">-->
-	</div>
+	<h1 class="project_title">Professional Projects</h1>
 	</div>
 
 	<div class="top_space"> </div>
+
+	<div class="project_container">
+		<p>
+			Below are just a few of the projects I have developed from the ground up and 
+			integrated into our web application at Tronair.
+		</p>
+	</div>
 
 
 	<div class="project_container" id="part_inspections">
@@ -65,7 +69,7 @@
 	<div class="project_container" id="real_time_display">
 		<h2>Real Time Display</h2>
 		<p class="project_text">
-			I also developed a Real Time Display (RTD) that production uses as a visual indicator of performance of the various workcenters.  
+			I also developed a Real Time Display (RTD) that production uses as a visual indicator of performance for the various workcenters.  
 			The default state shows the daily progress based on a set target for each workcenter at that point in time.
 			Clicking on a workcenter reveals further details about the individual jobs that are currently being worked on, jobs completed on the given day, 
 			and details of the issues that have been reported.  There is also an option to view historical data for individual workcenters from this view 
@@ -73,36 +77,33 @@
 		</p>
 		<h3 class="mt-4">RTD Summary</h3>
 		<p class="project_text">
-			talk about RTD
+			This image shows the summary of the performance of each workcenter.  Clicking on one of the "bubbles",
+			will take you to the detailed view for that workcenter.
 		</p>
-		<h3 class="mt-4">RTD Current Day View</h3>
+		<img class="project_img" src="./images/professional_projects/real_time_display/rtd_summary.png" alt="Real Time Display Summary">
+
+		<h3 class="mt-4">RTD Current Day Detailed View</h3>
 		<p class="project_text">
-			talk about RTD
+			This view is using live production data and automatically refreshes every minute.  It shows the performance targets compared to the actual 
+			progress, jobs in progress, jobs completed during the current day, and any issues that have been reported.  The jobs are also color-coded
+			to indicate if they are within their time targets.  I developed the frontend using HTML, CSS, and Javascript with jQuery and ChartJS and DataTables.
+			The data is pulled either directly from our MRP system or from a cache in our Microsoft SQL database.  The backend is developed using PHP with SQL.
 		</p>
+		<img class="project_img" src="./images/professional_projects/real_time_display/rtd_facility_view.png" alt="Real Time Display Facility View">
+
 		<h3 class="mt-4">RTD History View</h3>
 		<p class="project_text">
-			talk about RTD
+			This view was developed to show the data for any issues that have been reported.  The date range of the data is user selectable.
 		</p>
-	</div>
-
-	<hr>
-
-	<div class="project_container" id="setup_sheets">
-		<h2>Fabrication Setup Sheets</h2>
+		<img class="project_img" src="./images/professional_projects/real_time_display/rtd_date_range.png" alt="Real Time Display Date Range View">
 		<p class="project_text">
-			talk about Setup Sheets
+			This view was developed to show the data available for a date in the past including the performance for that day, jobs closed that day,
+			and any issues that were reported.
 		</p>
+		<img class="project_img" src="./images/professional_projects/real_time_display/rtd_history_view.png" alt="Real Time Display Date Range View">
 	</div>
-
-	<hr>
-
-	<div class="project_container" id="issue_tracker">
-		<h2>Issue Tracker</h2>
-		<p class="project_text">
-			talk about issue tracker
-		</p>
-	</div>
-
+	
+	<div class="top_space"></div>
 
 	<div class="menu">
 		<div class="menu_item"><a class="menu_link hyperlink" href="./index.html">HOME</a></div>

@@ -423,6 +423,10 @@ iframe {
     line-height: 1.5rem;
 }
 
+.project_img {
+    width: 100%;
+}
+
 .fusion360 {
     position: relative;
     margin: 20px auto 20px;

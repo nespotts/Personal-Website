@@ -16,6 +16,13 @@ function initializeEventHandlers() {
     $(window).on('resize', (event) => {
         setProjectWidths();
     });
+
+	$('.project_img').on('dblclick', (event) => {
+		let element = $(event.target);
+
+		// open image in new tab
+		window.open(element.attr('src'));
+	});
 }
 
 function setupScrollEvents() {
@@ -45,11 +52,15 @@ function scrollToELement(element, offset) {
 
 
 function setProjectWidths() {
-    let width = 50;
+    let width = 60;
+	let window_width = $(window).width();
     if (is_mobile) {
-        width = 90;
-    }
-
+        width = 95;
+    } else if (window_width < 800) {
+		width = 80;
+	} else if (window_width < 1000) {
+		width = 70;
+	}
     $('.project_container').css('width', `${width}%`);
 }
 

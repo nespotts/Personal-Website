@@ -20,7 +20,7 @@ function setTitleSectionWidth() {
     let width = 50;
     let height = 550;
     if (is_mobile) {
-        width = 90;
+        width = 95;
         height = 400;
     }
     $('.top_container').css({
