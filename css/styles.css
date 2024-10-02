@@ -325,7 +325,7 @@ iframe {
     top: 5px;
     background-color: #EAF6F6;
     text-align: center;
-    width: 150px;
+    width: 140px;
     border-radius: 15px;
     border-color: #66BFBF;
     border-width: 2px;
@@ -341,7 +341,7 @@ iframe {
     margin: 10% auto;
     color: #11999E;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .menu_link {

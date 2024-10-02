@@ -19,9 +19,11 @@ $(document).ready(function () {
 function setTitleSectionWidth() {
     let width = 50;
     let height = 550;
+    let title_font = 3.5;
     if (is_mobile) {
         width = 95;
         height = 400;
+        title_font = 2.5;
     }
     $('.top_container').css({
         'width': `${width}%`, 
@@ -31,6 +33,8 @@ function setTitleSectionWidth() {
     $('.profile').css('width', `${width}%`);
 
     $('.get-in-touch').css('width', `${width}%`);
+
+    $('.title1').css('font-size', `${title_font}rem`);
 }
 
 

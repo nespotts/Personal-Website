@@ -54,14 +54,23 @@ function scrollToELement(element, offset) {
 function setProjectWidths() {
     let width = 60;
 	let window_width = $(window).width();
+	let title_font = 3.5;
+	let project_header = 100;
+
     if (is_mobile) {
         width = 95;
+		title_font = 2.3;
+		project_header = 75;
     } else if (window_width < 800) {
 		width = 80;
 	} else if (window_width < 1000) {
 		width = 70;
 	}
     $('.project_container').css('width', `${width}%`);
+
+	$('.project_title').css('font-size', `${title_font}rem`);
+
+	$('.project_header').css('height', `${project_header}px`);
 }
 
 
